@@ -35,7 +35,7 @@ class ProductoController extends Controller
             "productos" => $productos
         ]);
     }
-
+    // creando función api
     public function api(Request $request)
     {
         $productos = Producto::select("productos.*");
